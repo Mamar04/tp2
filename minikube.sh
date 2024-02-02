@@ -10,9 +10,7 @@ sudo apt-get install curl wget apt-transport-https virtualbox virtualbox-ext-pac
 echo "Installing Docker"
 sudo apt update && sudo apt -y install docker.io
 sudo systemctl start docker --now
-sudo chmod 666 /var/run/docker.sock
-
-git add Dockerfile ansible.sh minikube.sh venv/
+sudo chmod 666 /var/run/docker.sock 
 
 # Apply system updates
 echo "Applying updates"
@@ -41,3 +39,5 @@ minikube start --driver=virtualbox
 # Check Minikube status
 echo "Checking Minikube status"
 minikube status
+
+git add Dockerfile ansible.sh minikube.sh
