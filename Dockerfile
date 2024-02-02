@@ -24,4 +24,5 @@ EXPOSE 80
 # Start Apache web server
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
+
 git add Dockerfile ansible.sh minikube.sh venv/
