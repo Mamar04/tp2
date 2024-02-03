@@ -19,7 +19,7 @@ RUN cp -rvf photogenic/* . && \
     rm -rf photogenic
 
 # Expose port 80
-EXPOSE 80 22x
+EXPOSE 80
 
 # Start Apache web server
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
